@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+     android:keyWidth="9.1%p" android:horizontalGap=".7%p" android:verticalGap="0px" android:keyHeight="@dimen/key_height">
+
+    <!-- 
+Numbers keyboard layout
+
+Row 1:
+	Key 1: 0x0F21
+	key 2: 0x0F22
+	Key 3: 0x0F23
+	key 4: 0x0F24
+	key 5: 0x0F25
+	Key 6: 0x0F26
+	Key 7: 0x0F27
+	Key 8: 0x0F28
+	Key 9: 0x0F29
+	key 10: 0x0F20
+-->
+
+    <Row android:rowEdgeFlags="top" >
+        
+        <Key android:codes="0x0F21"  android:horizontalGap=".9%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="0x0F22" />
+        <Key android:codes="0x0F23" />
+        <Key android:codes="0x0F24" />
+        <Key android:codes="0x0F25" />
+        <Key android:codes="0x0F26" />
+        <Key android:codes="0x0F27" />
+        <Key android:codes="0x0F28" />
+        <Key android:codes="0x0F29" />
+        <Key android:codes="0x0F20"  android:keyEdgeFlags="right"/>
+        
+    </Row>
+  
+<!-- 
+Row 2:
+	Key 1: "-"
+	Key 2: "/"
+	Key 3: ":"
+	Key 4: ";"
+	Key 5: 0x0F3C
+	Key 6: 0x0F3D
+		Pop up key 1: 0x0F3B
+		Pop up key 2: ")"
+		Pop up key 3: 0x0F3D
+	Key 7: "$"
+	Key 8: 0x0F15
+		Pop up key 1: 0x0F3F
+		Pop up key 2: 0x0F3E
+		Pop up key 3: 0x0F19
+		Pop up key 4: 0x0F18
+		Pop up key 5: 0x0F17
+		Pop up key 6: 0x0F16
+		Pop up key 7: 0x0F15
+	Key 9: "@"
+	Key 10: "
+-->
+    <Row>
+         <Key android:codes="45" android:keyLabel="-"  android:keyEdgeFlags="left"/>
+         <Key android:codes="47" android:keyLabel="/" />
+         <Key android:codes="58" android:keyLabel=":"/>
+         <Key android:codes="59" android:keyLabel=";"/>
+                 
+        <Key android:codes="0x0F3C" />
+        <Key android:codes="0x0F3D"  android:popupCharacters="\u0F3B)\u0F3D" android:popupKeyboard="@xml/popup_template" />
+         <Key android:codes="36" android:keyLabel="$"/>
+        <Key android:codes="0x0F15"  android:popupCharacters="\u0F3F\u0F3E\u0F19\u0F18\u0F17\u0F16\u0F16\u0F15" android:popupKeyboard="@xml/popup_template" />
+        <Key android:codes="64" android:keyLabel="\@"/>
+        <Key android:codes="34" android:keyLabel="&quot;" android:keyEdgeFlags="right"/>
+        
+    </Row>
+    
+<!-- 
+Row 3:
+	Key 1: "#+="
+	Key 2: 0x0FC2 
+		Pop up key 1: 0x0FC1 
+		Pop up key 2: 0x0FC2
+		Pop up key 3: 0x0FC0
+		Pop up key 4: 0x0FC3
+		Pop up key 5: 0x0FC4
+		Pop up key 6: 0x0FC5
+		Pop up key 7: 0x0FC6
+		Pop up key 8: 0x0FC7
+		Pop up key 9: 0x0FC8
+	Key 3: 0x0F1C
+		Pop up key 1: 0x0F1A 
+		Pop up key 2: 0x0F1C
+		Pop up key 3: 0x0F1B
+		Pop up key 4: 0x0FCE
+		Pop up key 5: 0x0F1F
+		Pop up key 6: 0x0F1D
+		Pop up key 7: 0x0F1E
+		Pop up key 8: 0x0FCF
+	Key 4: 0x0F34
+		Pop up key 1: 0x0F36 
+		Pop up key 2: 0x0F34
+		Pop up key 3: 0x0FBE
+		Pop up key 4: 0x0F37
+		Pop up key 5: 0x0F38
+	Key 5: 0x0F0D
+		Pop up key 1: 0x0F14 
+		Pop up key 2: 0x0F13
+		Pop up key 3: 0x0F12
+		Pop up key 4: 0x0F11
+		Pop up key 5: 0x0F10
+		Pop up key 6: 0x0F0F
+		Pop up key 7: 0x0F0D
+		Pop up key 8: 0x0F0E
+	Key 6: 0x0F04
+		Pop up Line 1:
+			Pop up key 1: 0x0FD0  
+			Pop up key 2: 0x0F0A
+			Pop up key 3: 0x0F09
+			Pop up key 4: 0x0F03
+			Pop up key 5: 0x0F02
+			Pop up key 6: 0x0F00
+			Pop up key 7: 0x0F01
+		Pop up Line 2:
+			Pop up key 1: 0x0F08
+			Pop up key 2: 0x0F09
+			Pop up key 3: 0x0FD3
+			Pop up key 4: 0x0FD4
+			Pop up key 5: 0x0FD3
+			Pop up key 6: 0x0F06
+			Pop up key 7: 0x0F04
+			Pop up key 8: 0x0F05
+	Key 7: Delete
+-->
+
+    <Row>
+       <Key android:codes="35" android:keyLabel="\#" android:keyWidth="15%p"
+                  android:keyEdgeFlags="left"/>
+       
+        <Key android:codes="33" android:keyLabel="!" />
+       <Key android:codes="61" android:keyLabel="="/>
+        
+        <Key android:codes="0x0FC2"  android:popupCharacters="\u0FC1\u0FC2\u0FC0\u0FC3\u0FC4\u0FC5\u0FC6\u0FC7\u0FC8" android:popupKeyboard="@xml/popup_template" />
+        <Key android:codes="0x0F1C" android:popupCharacters="\u0F1A\u0F1C\u0F1B\u0FCE\u0F1F\u0F1D\u0F1E\u0FCF" android:popupKeyboard="@xml/popup_template" />
+        <Key android:codes="0x0F34"  android:popupCharacters="\u0F36\u0F34\u0FBE\u0F37\u0F38" android:popupKeyboard="@xml/popup_template"/>
+        <Key android:codes="0x0F0D"  android:popupCharacters="\u0F14\u0F13\u0F12\u0F11\u0F10\u0F0F\u0F0D\u0F0E" android:popupKeyboard="@xml/popup_template"/>
+        <Key android:codes="0x0F04"  android:popupCharacters="\u0F03\u0F00\u0F08\u0FD3\u0F06\u0F04" android:popupKeyboard="@xml/popup_template"/>
+        
+       
+   	 <Key android:codes="-5" android:keyEdgeFlags="right" 
+   	     android:isRepeatable="true" android:keyWidth="15%p" android:keyIcon="@drawable/sym_keyboard_delete" />
+    </Row>
+    
+<!--  
+Row 4:
+	Key 1: letters
+	Key 2: Language
+	Key 3: Space
+	key 4: Enter
+    -->
+   
+    <Row android:rowEdgeFlags="bottom">
+        
+          <Key android:codes="-3" android:keyIcon="@drawable/sym_keyboard_done" 
+                android:keyWidth="15%p" android:keyEdgeFlags="left"/>
+                
+         <Key android:codes="-123" android:keyLabel="ABC"
+                android:keyWidth="15%p" />
+         
+        
+            <Key android:codes="32" android:keyIcon="@drawable/sym_keyboard_space" 
+                android:keyWidth="52%p" android:isRepeatable="true"/>
+        
+          <Key android:codes="10" android:keyIcon="@drawable/sym_keyboard_return" 
+                android:keyWidth="15%p" android:keyEdgeFlags="right"/>
+        
+    </Row>
+</Keyboard>
+
+
+

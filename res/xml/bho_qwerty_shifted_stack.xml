@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+     android:keyWidth="9.1%p" android:horizontalGap=".7%p" android:verticalGap="0px" android:keyHeight="@dimen/key_height">
+
+          
+    <!-- 
+Shift Key Board Layout
+
+Row 1:
+	Key 1: FUNCTION KEY
+	Key 2: 0x0FBA
+	Key 3: 0x0F7B
+	Key 4: 0x0FB2
+	Key 5: 0x0FA0
+	Key 6: 0x0FB1
+	Key 7: 0x0FAD
+	Key 8: 0x0F80
+	Key 9: 0x0F7D
+	Key 10: 0x0FA5
+	-->
+    <Row android:rowEdgeFlags="top" >
+<Key android:codes="0x0F84"  android:isModifier="true" android:horizontalGap=".9%p" android:keyEdgeFlags="left" android:isSticky="false" />        
+        <Key android:codes="0x0FBA" />
+        <Key android:codes="0x0F7B" />
+        <Key android:codes="0x0FB2" />
+        <Key android:codes="0x0FA0" />
+        <Key android:codes="0x0FB1" />
+        <Key android:codes="0x0FAD" />
+        <Key android:codes="0x0F80" />
+        <Key android:codes="0x0F7D" />
+        <Key android:codes="0x0FA5" android:keyEdgeFlags="right"/>
+    </Row>
+    
+    <!-- 
+    
+    
+Row 2:Row 2:
+	Key 1: 0x0FB8
+	Key 2: 0x0FB4
+	Key 3: 0x0F9C
+		Pop up key 1: 0x0F9C
+		Pop up key 2: 0x0F9D
+	Key 4: 0x0F9B
+	Key 5: 0x0F9A
+	Key 6: 0x0F7F
+	Key 7: 0x0F97
+	key 8: 0x0F91
+	Key 9: 0x0FB3
+    -->
+    <Row>
+        <Key android:codes="0x0FB8" android:horizontalGap="6.9%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="0x0FB4" />
+        <Key android:codes="0x0F9C"  android:popupCharacters="\u0F9C\u0F9D" android:popupKeyboard="@xml/popup_template" />
+        <Key android:codes="0x0F9B" />
+        <Key android:codes="0x0F9A" />
+        
+        <Key android:codes="0x0F7F"/>
+        <Key android:codes="0x0F97" />
+        <Key android:codes="0x0F91" />
+        <Key android:codes="0x0FB3" android:keyEdgeFlags="right"/>
+        
+    </Row>
+    
+    <!-- 
+    
+Row 3: 
+	Key 1: Shift key
+	Key 2: 0x0FAE
+	Key 3: 0x0FB5
+	Key 4: 0x0F96
+	Key 5: 0x0FAA
+	Key 6: 0x0FA6
+	Key 7: 0x0F9E
+	Key 8: 0x0F7E
+		Pop up key 1: 0x0F8B
+		Pop up key 2: 0x0F85
+		Pop up key 3: 0x0F8A
+		Pop up key 4: 0x0F89
+		Pop up key 5: 0x0F88
+		Pop up key 6: 0x0F87
+		Pop up key 7: 0x0F86
+		Pop up key 8: 0x0F82
+		Pop up key 9: 0x0F7E
+		Pop up key 10: 0x0F83
+	Key 9: Delete
+     -->
+    <Row>
+     
+       <Key android:codes="-1" android:keyIcon="@drawable/sym_keyboard_shift" 
+                 android:keyWidth="15%p" android:isModifier="true"
+                android:isSticky="true" android:keyEdgeFlags="left"/>  
+        <Key android:codes="0x0FAE"/>
+        <Key android:codes="0x0FB5"/>
+        <Key android:codes="0x0F96"/>
+        <Key android:codes="0x0FAA"/>
+        <Key android:codes="0x0FA6" />
+        <Key android:codes="0x0F9E"/>
+        <Key android:codes="0x0F7E"  android:popupCharacters="\u0F8B\u0F85\u0F8A\u0F89\u0F88\u0F87\u0F86\u0F82\u0F7E\u0F83" android:popupKeyboard="@xml/popup_template" />
+        
+    	 <Key android:codes="-5" android:keyEdgeFlags="right" 
+   	     android:isRepeatable="true"  android:keyWidth="15%p" android:keyIcon="@drawable/sym_keyboard_delete" />
+      
+    </Row>
+    
+  
+    <!-- 
+    
+Row 4:Row 4:
+	Key 1: Numbers key
+	Key 2: Language button
+	Key 3: 0x0F0B
+	Key 4: Space
+	Key 5: Enter
+     -->
+    <Row android:rowEdgeFlags="bottom">
+        
+        
+       <Key android:codes="-3" android:keyIcon="@drawable/sym_keyboard_done" 
+                android:keyWidth="15%p" android:keyEdgeFlags="left"/>
+                
+         <Key android:codes="-123" android:keyLabel="123"
+                android:keyWidth="15%p"   android:isSticky="false" />
+        
+        <Key android:codes="0x0f0b" android:keyWidth="26%p" />
+            <Key android:codes="32" android:keyIcon="@drawable/sym_keyboard_space" 
+                android:keyWidth="26%p" android:isRepeatable="true"/>
+        
+          <Key android:codes="10" android:keyIcon="@drawable/sym_keyboard_return" 
+                android:keyWidth="15%p" android:keyEdgeFlags="right"/>
+        
+    </Row>
+</Keyboard>
